@@ -4,7 +4,7 @@ jobs:
   StaticCodeChecking:
     runs-on: ubuntu-latest
     steps:
-      -run: echo "dziala"
+      - run: echo "dziala"
   UnitTests:
     runs-on: ubuntu-latest
     steps:
