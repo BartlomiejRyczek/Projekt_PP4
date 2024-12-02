@@ -17,3 +17,11 @@ jobs:
       - name: Compile it
         run: mvn -DskipTest package
       - run: "ls -la target/"
+      - run: "mv  target/*.jar target/ecommers.jar"
+      - uses: ncipollo/release-action@v1
+        with: 
+          artifacts: "release.tar.gt,foo/*.txt"
+          name: "my release"
+          body:
+            ## my nice release
+            here we go
