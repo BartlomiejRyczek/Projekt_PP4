@@ -5,5 +5,5 @@ jobs:
   runs-on: ubuntu-latest
   Steps:
   - run: echo "czesc"
-  - run: "ls-la"
+  - run: "ls -la"
   
