@@ -2,8 +2,15 @@ name: Hello Github Actions
 on: [push]
 jobs:
   Helloworld:
-  runs-on: ubuntu-latest
-  Steps:
-  - run: echo "czesc"
-  - run: "ls -la"
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "czesc"
+    - run: echo "odpalono na ${{runner.os}}"
+    - name: Check out repository code
+      uses: actions/checkout@v4
+    - run: "ls -la"
+    - run: "tree ./"
+    
+    
+      
   
